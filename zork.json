@@ -1,0 +1,262 @@
+{
+    "verbs": [
+      { "v": "EXITS",   "map": "EXITS" },
+      { "v": "QUIT",    "map": "QUIT"  },
+      { "v": "NORTH",   "map": "NORTH" },
+      { "v": "N",       "map": "NORTH" },
+      { "v": "SOUTH",   "map": "SOUTH" },
+      { "v": "S",       "map": "SOUTH" },
+      { "v": "EAST",    "map": "EAST"  },
+      { "v": "E",       "map": "EAST"  },
+      { "v": "WEST",    "map": "WEST"  },
+      { "v": "W",       "map": "WEST"  },
+      { "v": "U",       "map": "UP"    },
+      { "v": "UP",      "map": "UP"    },
+      { "v": "D",       "map": "DOWN"  },
+      { "v": "DOWN",    "map": "DOWN"  }
+    ],
+
+    "rooms": {
+      "START": {
+        "name": "bed! North East Corner",
+        "desc": "In this game you play as a toddler left in the IKEA Store.\nU slowlee opem yor eye. The light nex to u is blinding. \nAs u ar eye becom used to the light you undrstand tat u ar not\nin yor crib...\nat homee...\nor in the warm of someone arms...\nu screem as woud as u cn, but noo1 heirs u\nU are too yung 2 die and must fend ur waye bak homee",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "F9D2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F9D2": {
+        "name": "North East Window",
+        "desc": "Weaving the bed u cee that u wer nex to the only lite in the wroom.\nU cee the moon out the east window. \nit reminds u of homee.\n U see a supsiptous cleaning cart to the south\nand the smooth tile flor to the west.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "F9D2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F9D3": {
+        "name": "South East Window",
+        "desc": "U cee the moon out the east window. \nit reminds u of homee.\n U see a supsiptous cleaning man cart to the south\nand the smooth tile flor to the west.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "F9D4",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "F9D2",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "F9C3",
+            "condition": ""
+          },
+          {
+          "verb": "EAST",
+          "target": "NoExit",
+          "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F9D4": {
+        "name": "South East Corner",
+        "desc": "The cart man forget to pick up his yello sign\nU procede too slip on the water left on the flor.\n Ooooow! u start crwying in ur puddle.\n U swudenly get destrwacted by a nice pillow in the distansce.\nDere is a escawator to the west, but it only gos up.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "F9D3",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F9C1": {
+        "name": "North Birch Closet",
+        "desc": "U struglle to git into the big closet, but u manage.\n U expec a hiden pasageway, but this is no bedtim stowy.\nSaddened by yur own cuwiosity u sit down in the closet missing ur bed.",
+        "exits": [
+          {
+            "verb": "SOUTH",
+            "target": "F9C2",
+            "condition": ""
+          },
+          {
+            "verb": "NORTH",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "WEST",
+            "target": "NoExit",
+            "condition": ""
+          },
+          {
+            "verb": "EAST",
+            "target": "NoExit",
+            "condition": ""
+          }
+        ],
+        "inventory": []
+      },
+      "F9C2": {
+        "name": "Shinee Fwoor!",
+        "desc": "a nice opin fwoor gweets u as it shines bak at u.\nThe fwoor fills u wif determination on ur qwest four sweep!\nThere is more shinee fwoor to the west,\n a towering white closet to the norf,\n a towring deschk to the south,\nand a sinking feeling accompaniing ur realization of the darkiness of the rwest of the wroom",
+        "exits": [
+          {
+          "verb": "SOUTH",
+          "target": "F9C3",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "F9C1",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "F9B2",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "F9D2",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+      },
+      "F9C3": {
+        "name": "DESCHK... OnO",
+        "desc": "The deschk haz a fase! Wate...\nmaybe no...\nthe desck stairs bak at u wifout bwinking...\nThere are som nice pilwows to the east,\nShineee flor to the norf,\na escawaitor rail blocking ur way to da souf,\na yello cart too the east,\n and the desck is gibbing u a dirty wook...",
+        "exits": [
+          {
+          "verb": "SOUTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "F9C2",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "F9B3",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "F9D3",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+      },
+      "F9B3": {
+        "name": "Pilwows!",
+        "desc": "Da soff pilwows lok sooo nice to u as u jump onto them-- \nthe rough feel of pwastic and cardbord greet ur face.\nUnhappiwy u stumble a way from the pile o hard pilwows seeking sweet sweep.\nThere is a shinee flor to the norf,\na window with dim lite comming throo it too the west, \nand anover escawaitor rail going down too the souf blocing ur waye.\n(The deshck shoots u a quik glanse)",
+        "exits": [
+          {
+          "verb": "SOUTH",
+          "target": "NoExit",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "F9B2",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "F9A3",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "F9C3",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+      },
+      "F9B2": {
+        "name": "Shinee Four!?",
+        "desc": "A new shinee flor apwroches as u almost slip on the polished tile.\nU see the stweet wites out the window to the west,\nthere is som nice sized tables too the norf,\nand a fancinating pile of pilwows to the souf.",
+        "exits": [
+          {
+          "verb": "SOUTH",
+          "target": "F9B3",
+          "condition": ""
+        },
+        {
+          "verb": "NORTH",
+          "target": "F9B4",
+          "condition": ""
+        },
+        {
+          "verb": "WEST",
+          "target": "F9A2",
+          "condition": ""
+        },
+        {
+          "verb": "EAST",
+          "target": "F9C2",
+          "condition": ""
+        }
+      ],
+      "inventory": []
+      }}}
